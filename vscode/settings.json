@@ -1,0 +1,5 @@
+{
+  "dotfiles.repository": "devskar/dotfiles",
+  "dotfiles.targetPath": "~/dotfiles",
+  "dotfiles.installCommand": "install.sh"
+}

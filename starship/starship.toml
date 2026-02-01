@@ -1,0 +1,16 @@
+# Minimal, DE-friendly prompt
+add_newline = false
+prompt_order = ["username", "hostname", "directory", "git_branch", "git_status", "jobs", "character"]
+
+[directory]
+truncation_length = 3
+truncation_symbol = "…/"
+
+[git_status]
+disabled = false
+
+[character]
+success_symbol = "❯"
+error_symbol = "✗"
+vicmd_symbol = "❮"
+
