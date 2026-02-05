@@ -10,15 +10,20 @@ fi
 # Update system
 $SUDO apt update
 $SUDO apt upgrade -y
-$SUDO apt install curl -y
 
 # Common
+$SUDO apt install curl -y
+$SUDO apt install unzip -y
 $SUDO apt install software-properties-common -y
 $SUDO apt install git -y
 $SUDO apt install build-essential -y
 $SUDO apt install ripgrep -y
+$SUDO apt install trash-cli -y
 $SUDO apt install groff-base -y
 $SUDO apt install manpages -y
+
+# Node
+$SUDO apt install nodejs npm -y
 
 # Lanugage
 $SUDO apt install locales -y
@@ -33,6 +38,6 @@ $SUDO apt install neovim -y
 
 # zsh
 $SUDO apt install zsh -y
-chsh -s $(which zsh)
+chsh -s /bin/zsh
 
 sh -c "$(curl -fsSL https://starship.rs/install.sh)" -- -y
