@@ -9,6 +9,7 @@ SAVEHIST=10000
 source ~/dotfiles/zsh/env.zsh
 source ~/dotfiles/zsh/aliases.zsh
 source ~/dotfiles/zsh/opts.zsh
+source ~/dotfiles/zsh/bindings.zsh
 
 # ---- Load tools ----
 source ~/dotfiles/zsh/tools/dotnet.zsh
