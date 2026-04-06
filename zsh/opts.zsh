@@ -10,3 +10,6 @@ setopt SHARE_HISTORY
 
 # ---- marlonrichert/zsh-autocomplete ----
 zstyle ':autocomplete:*' add-semicolon no
+zstyle ':autocomplete:*' delay 1
+zstyle ':autocomplete:*' min-input 11
+
