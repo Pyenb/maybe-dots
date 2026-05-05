@@ -61,15 +61,3 @@ vim.api.nvim_create_autocmd(
     end,
   }
 )
-
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = "cs",
-  callback = function()
-    local map_opts = { noremap = true, silent = true }
-    vim.keymap.set("n", "gd", "<cmd>lua require('omnisharp_extended').lsp_definition()<CR>", map_opts)
-    vim.keymap.set("n", "<leader>D", "<cmd>lua require('omnisharp_extended').lsp_type_definition()<CR>", map_opts)
-    vim.keymap.set("n", "gr", "<cmd>lua require('omnisharp_extended').lsp_references()<CR>", map_opts)
-    vim.keymap.set("n", "gi", "<cmd>lua require('omnisharp_extended').lsp_implementation()<CR>", map_opts)
-  end
-})
-

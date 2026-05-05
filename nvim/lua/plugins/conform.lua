@@ -14,11 +14,5 @@ return {
       timeout_ms = 1000,
       lsp_format = "fallback",
     },
-  },
-  {
-    "windwp/nvim-ts-autotag",
-    config = function()
-      require("nvim-ts-autotag").setup()
-    end,
-  },
+  }
 }

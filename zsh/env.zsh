@@ -18,7 +18,6 @@ export LC_ALL="en_US.UTF-8"
 typeset -U path
 path=(
   "$HOME/bin"
-  "$HOME/.local/share/nvim/mason/packages/omnisharp"
   "$HOME/.local/bin"
   "$HOME/dotfiles/bin"
   $path
