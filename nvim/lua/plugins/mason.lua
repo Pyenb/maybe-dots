@@ -4,7 +4,6 @@ return {
   dependencies = {
     "mason-org/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
-    { "Hoffs/omnisharp-extended-lsp.nvim", lazy = true }
   },
   opts = {
     servers = {
@@ -21,30 +20,6 @@ return {
       eslint = {},
       tailwindcss = {},
       clangd = {},
-      omnisharp = {
-        handlers = {
-          ["textDocument/definition"] = function(...)
-            return require("omnisharp_extended").handler(...)
-          end,
-        },
-        settings = {
-          FormattingOptions = {
-            EnableEditorConfigSupport = true,
-            OrganizeImports = true,
-          },
-          MsBuild = {
-            LoadProjectsOnDemand = false,
-          },
-          RoslynExtensionsOptions = {
-            EnableAnalyzersSupport = true,
-            EnableImportCompletion = true,
-            AnalyzeOpenDocumentsOnly = false,
-            EnableDecompilationSupport = true,
-          },
-          RenameOptions = {},
-          Sdk = { IncludePrereleases = true },
-        },
-      },
     }
   },
   config = function(_, opts)
