@@ -1,3 +1,7 @@
+# Ensure the cache and completion directories exist and are in fpath
+mkdir -p "$ZSH_CACHE_DIR/completions"
+(( ${fpath[(Ie)"$ZSH_CACHE_DIR/completions"]} )) || fpath=("$ZSH_CACHE_DIR/completions" $fpath)
+
 # ---- Load antidote ----
 source ~/.antidote/antidote.zsh
 antidote load
@@ -18,3 +22,9 @@ unset _rc
 
 # Starship
 eval "$(starship init zsh)"
+
+# Vite+ bin (https://viteplus.dev)
+VITE_PLUS_ENV_PATH="$HOME/.config/vite-plus/env"
+if [[ -a "$VITE_PLUS_ENV_PATH" ]]; then
+  . "$VITE_PLUS_ENV_PATH"
+fi
