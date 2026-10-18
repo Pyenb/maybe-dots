@@ -1,5 +1,19 @@
 "$schema" = "https://starship.rs/config-schema.json"
 
+[custom.termrec]
+description = "Display your current Termrec session"
+when = """ test "$TERMREC_ACTIVE" = "1" """
+symbol = " "
+format = "\\[[$symbol ON AIR]($style)\\]"
+style = "bold red"
+
+# [custom.termrec]
+# description = "Display your current Termrec session"
+# when = """ test "$TERMREC_ACTIVE" = "1" """
+# symbol = " "
+# command = "echo $TERMREC_RECORDING_NAME"
+# format = "\\[[$symbol ON AIR]($style)\\] [$output](bold green)"
+# style = "bold red"
 [aws]
 symbol = " "
 format = "\\[[$symbol($profile)(\\($region\\))(\\[$duration\\])]($style)\\]"
