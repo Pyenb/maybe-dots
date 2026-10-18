@@ -30,4 +30,4 @@ alias dubu='docker run --rm -it ubuntu bash'
 alias dalp='docker run --rm -it alpine ash'
 
 # ---- git open ----
-alias go="git-open"
+alias gito="git-open"
