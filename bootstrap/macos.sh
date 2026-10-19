@@ -16,6 +16,7 @@ brew install node
 
 # Tmux
 brew install tmux
+brew install tmuxp
 
 # Nvim
 brew install neovim

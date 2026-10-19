@@ -8,6 +8,7 @@ mkdir -p ~/.config
 ln -sf ~/dotfiles/zsh/.zshrc ~/.zshrc
 ln -sf ~/dotfiles/zsh/.zshenv ~/.zshenv
 ln -sf ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
+ln -sfn ~/dotfiles/tmuxp ~/.config/tmuxp
 ln -sf ~/dotfiles/starship/starship.toml ~/.config/starship.toml
 ln -sf ~/dotfiles/zsh/.zsh_plugins.txt ~/.zsh_plugins.txt
 ln -sfn ~/dotfiles/nvim ~/.config/nvim

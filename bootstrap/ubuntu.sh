@@ -30,6 +30,7 @@ $SUDO locale-gen en_US.UTF-8
 
 # Tmux
 $SUDO apt install tmux -y
+$SUDO apt install tmuxp -y
 
 # Nvim
 $SUDO add-apt-repository ppa:neovim-ppa/unstable -y

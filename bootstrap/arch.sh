@@ -30,6 +30,7 @@ $SUDO locale-gen
 
 # Tmux
 $SUDO pacman -S tmux --noconfirm
+$SUDO pacman -S tmuxp --noconfirm
 
 # Nvim
 $SUDO pacman -S neovim --noconfirm
