@@ -1,4 +1,5 @@
-session_name: coding
+session_name: "coding $DIR_NAME"
+
 windows:
   - window_name: dev
     layout: main-vertical
