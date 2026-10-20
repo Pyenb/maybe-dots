@@ -3,10 +3,13 @@ session_name: "coding $DIR_NAME"
 windows:
   - window_name: dev
     layout: main-vertical
+    focus: true
     options:
       main-pane-width: '70%'
     panes:
-      - 'nvim .'
+      - shell_command:
+          - 'vim .'
+        focus: true
       - ''
   - window_name: git
     panes:
