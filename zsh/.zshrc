@@ -15,10 +15,8 @@ for _rc in $HOME/dotfiles/zsh/.zshrc.d/**/*.zsh; do
 done
 unset _rc
 
-# ---- Tmux auto start (disabled; uncomment if desired) ----
-# if command -v tmux >/dev/null && [ -z "$TMUX" ]; then
-#   tmux attach -t main || tmux new -s main
-# fi
+# Use Emacs-style command-line editing. This is the default but is overriden by zsh because $EDITOR AND $VISUAL are set to nvim in .zshenv
+bindkey -e
 
 # Starship
 eval "$(starship init zsh)"
