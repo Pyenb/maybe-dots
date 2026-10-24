@@ -13,7 +13,6 @@ ln -sf ~/dotfiles/starship/starship.toml ~/.config/starship.toml
 ln -sf ~/dotfiles/zsh/.zsh_plugins.txt ~/.zsh_plugins.txt
 ln -sfn ~/dotfiles/nvim ~/.config/nvim
 ln -sfn ~/dotfiles/alacritty/ ~/.config/alacritty
-ln -sfn ~/dotfiles/make ~/.make
 
 # ---- OS-specific-tweaks
 case "$OSTYPE" in

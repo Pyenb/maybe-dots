@@ -27,9 +27,6 @@ export LC_ALL="en_US.UTF-8"
 # ---- Path ----
 typeset -U path fpath
 
-# ---- Make ----
-export MAKEFILES="~/.make/global.mk"
-
 path=(
   "$HOME/bin"
   "$HOME/.local/bin"
